@@ -1,0 +1,423 @@
+@import url(../css/fonts.css);
+
+
+*{
+  box-sizing: border-box;
+  margin: 0%;
+}
+
+html{
+ overflow-x: hidden;
+}
+
+ /***** GLOBAL CLASSES *****/
+
+a {
+  text-decoration: none;
+  color: var(--text-grey);
+}
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+  cursor: pointer;
+}
+
+
+:root {
+  /*---------------- FONT ---------------*/
+  --inter-300: "Inter-thin";
+  --inter-400: "Inter-regular";
+  --inter-500: "Inter-medium";
+  --inter-600: "Inter-semiBold";
+  --inter-700: "Inter-bold";
+
+  /*----------------THEME COLORS ---------------*/
+  --offWhite: #eeedee;
+  --bg-secondary: #ededf6;
+  --text-black: #000000;
+  --white: #ffffff;
+  --text-grey: #3f4954;
+  --text-light: #6a6666da;
+  --black-midnight: #16151d;
+  --light-primary: #999999;
+  --secondary-color: #9E18C0;
+  --primary-color: #4285f4;
+
+  /*----------------- GRADIENT COLOR -------------*/
+
+  /*----------------- SIZE --------------- */
+  --font-xs: 0.875rem;
+  --font-sm: 1.3rem;
+  --font-display: 2rem;
+  --font-icon: 1.4rem;
+  --font-h3: 1.6rem;
+  --font-h4: 1.1rem;
+}
+
+/* UTILITY CLASSES */
+.flex{ display: flex;}
+.flex-row{ flex-direction: row;}
+.flex-column{ flex-direction: column;}
+.flex-wrap{ flex-wrap: wrap;}
+.block{ display: block;}
+.inline-flex { display: inline-flex;}
+.inline-block{ display: inline-block;}
+.relative{ position: relative;}
+.absolute{ position: absolute;}
+.space-between{ justify-content: space-between;}
+.justify-center{ justify-content: center;}
+.flex-end{ justify-content: flex-end;}
+.align-center{ align-items: center;}
+.text-center{ text-align: center;}
+
+.bg-1{ background-color: var(--bg);}
+.text-black{ color: var(--text-black);}
+.bg-secondary{ color: var(--bg-secondary);}
+.text-grey{ color: var(--text-grey);}
+.light-primary{ color: var(--light-primary);}
+.white{ color: var(--white);}
+.secondary-color{ color: var(--secondary-color);}
+.text-underline{ text-decoration: underline;}
+
+.font-span{ font-size: var(--font-span);}
+.font-xs{ font-size: var(--font-xs);}
+.font-sm{ font-size: var(--font-sm);}
+.font-body{ font-size: var(--font-body);}
+.font-display{ font-size: var(--font-display);}
+.font-h3{ font-size: var(--font-h3);}
+.font-h4{ font-size: var(--font-h4);}
+
+.w-full{ width: 100%;}
+.w-half{ width: 50%;}
+.h-full{ height: 100%;}
+
+
+
+/********* NAVIGATION *********/
+
+nav.nav{
+  font-family: var(--inter-400);
+  font-size: var(--font-xs);
+  height: fit-content;
+}
+
+nav .nav-menu{
+ overflow: hidden;
+ background: var(--white);
+ padding: 0.625rem 1.5rem 0.625rem 0.625rem;
+ border-bottom: 0.25px solid var(--light-primary);
+}
+
+nav .nav-brand{
+ width: 6.1875rem;
+ height: 2.5625rem;
+}
+
+nav .navlinks-left ul,
+nav .navlinks-right ul{
+ align-items: center;
+ gap: 1.5rem;
+}
+
+nav .navlinks-right ul>li> .btn{
+  display: flex;
+  padding: 0.375rem 1rem;
+  border-radius: 1.125rem;
+  background: var(--secondary-color);
+  color: var(--white);
+}
+
+/**XXXX*** NAVIGATION ***XXXX**/
+
+
+/********* MAIN *********/
+
+/***** HERO PAGE  *****/
+
+main .hero-page{
+ width: 90rem;
+ height: 28rem;
+ overflow: hidden;
+ background: url('../assets/bg-image.png');
+ background-size: cover;
+}
+
+main .hero-page .hero-content{
+  position: absolute;
+  top: 17%;
+  left: 8.3%;
+  gap: 1.48rem;
+}
+
+.hero-page .hero-content .btn-og{
+ font-family: var(--inter-300);
+ font-size: var(--font-xs);
+ padding: 0.375rem 1rem;
+ border-radius: 0rem 0.5rem;
+ background: #9747FF;
+ left: 150px;
+}
+
+.hero-page .hero-content .hero-text{
+  padding-top: 2.20rem;
+  font-family: var(--inter-700);
+  font-size: 2rem;
+  top: 26%;
+  left: 27%;
+}
+
+.hero-icons span{
+  color: var(--white);
+  font-family: var(--inter-500);
+  font-size: var(--font-xs);
+  padding-top: 0.25rem;
+  padding-right: 1.5rem;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.hero-text p{
+  font-family: var(--inter-400);
+  font-size: 1.125rem;
+  padding-top: 1.19rem;
+}
+
+.hero-text .rating{
+  font-family: var(--inter-400);
+  font-size: 1.4rem;
+  padding-top: 1.47rem;
+  gap: 0.56rem;
+}
+
+.hero-text .rating span{
+  font-size: 0.8125rem;
+}
+
+.hero-text .read-library>ul{
+  font-family: var(--inter-400);
+  font-size: 1.125rem;
+  gap: 1rem;
+  padding-left: 0;
+  padding-top: 2.51rem;
+  padding-bottom: 1.11rem;
+}
+
+.hero-text .read-library li a{
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--secondary-color);
+  background: var(--secondary-color);
+  color: var(--white);
+}
+
+/*XX** HERO PAGE  **XX*/
+
+
+/***** CONTENT PAGE  *****/
+
+main .contents{
+  padding-top: 3.31rem;
+  width: 83%;
+}
+
+main .contents .heading{
+  font-family: var(--inter-700);
+  font-size: 2.25rem;
+  color: var(--text-black);
+}
+
+main .contents .heading>h3>a{
+  border-bottom:5px solid var(--primary-color);
+  padding-bottom: 8px;
+}
+
+main .contents .heading span{
+  color: var(--light-primary);
+}
+
+main .contents .page-article{
+  font-family: var(--inter-700);
+  padding-top: 2rem;
+}
+
+main .contents .page-article p{
+  font-size: 1.4rem;
+}
+
+.contents .page-article>article{
+  font-size: 1.125rem;
+  font-family: var(--inter-400);
+  padding-top: 3.12rem;
+  overflow: hidden;
+  line-break: 2.5rem;
+}
+
+.contents .page-article>article>p{
+  margin-top: 1.2rem;
+  line-height: 2rem;
+}
+
+.contents .tag-story{
+  padding-top: 3rem;
+  font-family: var(--inter-400);
+}
+
+.contents .tag-story ul{
+  display: flex;
+  gap: 1rem;
+}
+
+.contents .tag-story ul>li>a{
+  padding: 0.5rem 1rem;
+  border-radius: 1.25rem;
+  background: var(--offWhite);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.contents .btn-article{
+  padding-top: 2rem;
+
+}
+
+.contents .btn-article a{
+  font-family: var(--inter-600);
+  font-size: 1.4rem;
+  background: var(--primary-color);
+  padding: 0.875rem 1rem;
+  border-radius: 0.375rem;
+  color: var(--white);
+}
+
+/*XX** CONTENT PAGE  **XX*/
+
+
+/***** NOVELS SECTION  *****/
+
+main .novels{
+  padding-top: 2.5rem;
+}
+
+main .novels .container{
+  width: 83%;
+}
+
+main .novels .novels-content {
+  padding: 1.8125rem 1.75rem 2.3125rem 1.8125rem;
+  background: var(--bg-secondary);
+}
+
+main .novels .novels-content .novels-heading{
+  font-family: var(--inter-700);
+  font-size: 1.4rem;
+  color: var(--text-black);
+}
+
+main .novels .novels-content .novels-tab{
+  padding-top: 2rem;
+}
+
+.novels-content .novels-tab ul li p.sp{
+  color: var(--text-black);
+  font-family: var(--inter-700);
+  font-size: 1rem;
+}
+
+.novels-content .novels-tab ul li p.es {
+  padding-top: 0.13rem;
+  font-family: var(--inter-400);
+  font-size: 0.8125rem;
+}
+
+.novels-content .novels-tab ul li .novel-rating{
+ padding-top: 0.3rem;
+}
+
+.container .novels-rating{
+  padding-top: 3.5rem;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.0625rem solid var(--light-primary);
+}
+
+.container .novels-rating p{
+  font-size: 1.4rem;
+  font-family: var(--inter-700);
+  color: var(--text-black);
+}
+
+.container .review{
+  font-size: 1.125rem;
+  padding-top: 2.75rem;
+  font-family: var(--inter-400);
+  gap: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--light-primary);
+}
+
+.container .review>span>a{
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--black-midnight);
+  background: var(--black-midnight);
+}
+
+.container .heading{
+  font-family: var(--inter-700);
+  font-size: 2.25rem;
+  color: var(--text-black);
+  padding-top: 2rem;
+  gap: 1.5rem;
+}
+
+.container .heading h3>a{
+  border-bottom: 2px solid var(--primary-color);  
+}
+
+.container .heading span {
+  color: var(--light-primary);
+  border: none;
+  padding-left: 3.2rem;
+}
+
+.comment-space{
+  padding-top: 1.63rem;
+} 
+.comment-space .profile{
+  font-family: var(--inter-700);
+  font-size: 1rem;
+  gap: 0.26rem;
+}
+
+.comment-space .comment-rating{
+  padding-top: 0.48rem;
+  padding-left: 1.51rem;
+}
+
+.comment-space .comment{
+  font-family: var(--inter-400);
+  font-size: 1.125rem;
+  color: var(--light-secondary, #555);
+  padding-top: 1rem;
+}
+
+.duration{
+  font-family: var(--inter-400);
+  font-size: 0.875rem;
+  color: var(--light-primary);
+  padding-top: 1.3rem;
+}
+
+/*XX** NOVELS SECTION  **XX*/
+
+/**XXXX*** MAIN ***XXXX**/
