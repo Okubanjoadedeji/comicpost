@@ -24,8 +24,11 @@
               <img src="public/images/panda-logo.png" alt="panda-logo">
             </a>
           </div>
+          <div class="align-center display-none coll relative">
+            <a href="#">Browse</a>
+          </div>
 
-          <ul class="flex">
+          <ul class="flex display-none-780px">
             <li>
               <a href="#">Short Reads</a>
             </li>
@@ -48,18 +51,24 @@
               </a>
             </li>
 
-            <li>
+            <li class="user-icon">
+              <a href="#">
+                <img src="public/images/user-avatar.png" alt="user-avatar">
+              </a>
+            </li>
+
+            <li class="display-none-780px">
               <a href="#">Write</a>
               <a href="#">
                 <img src='public/images/chevron-down.png' alt='chevron-down'>
               </a>
             </li>
 
-            <li>
+            <li class="display-none-780px">
               <a class="btn" href="#">Join Us</a>
             </li>
 
-            <li>
+            <li class="display-none-780px">
               <a href="#">Sign In</a>
             </li>
           </ul>
@@ -204,12 +213,12 @@
         
         <div class="container">
           <div class="novels-content">
-            <div class="novels-exem">
+            <div class="novels-exem flex flex-column ">
               <div class="novels-heading flex">
                 <h3>Novels You May Like</h3>
               </div>
               
-              <div class="flex flex-row space-between">
+              <div class="novels-contain flex flex-row space-between">
                 <div class="novels-tab flex">
                   
                   <ul>
@@ -501,7 +510,7 @@
             </svg>
           </div>
           
-          <div class="review flex justify-center align-center">
+          <div class="review flex justify-center align-center flex-wrap">
             <p class="text-center">Share your thoughts with others</p>
             <span>
               <a href="#">WRITE A REVIEW</a>
@@ -555,6 +564,7 @@
 
               <div class="duration flex space-between">
                 <p>2 months</p>
+
 
 
                 <div>
@@ -723,3 +733,4 @@
     <script src="js/main.js"></script>
   </body>
 </html>
+

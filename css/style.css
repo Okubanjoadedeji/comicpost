@@ -68,6 +68,7 @@ h1,h2,h3,h4,h5,h6{
 .flex-row{ flex-direction: row;}
 .flex-column{ flex-direction: column;}
 .flex-wrap{ flex-wrap: wrap;}
+.display-none{ display: none;}
 .block{ display: block;}
 .inline-flex { display: inline-flex;}
 .inline-block{ display: inline-block;}
@@ -128,6 +129,10 @@ nav .navlinks-right ul{
  gap: 1.5rem;
 }
 
+nav .navlinks-right ul>.user-icon{
+  display: none;
+}
+
 nav .navlinks-right ul>li> .btn{
   display: flex;
   padding: 0.375rem 1rem;
@@ -144,7 +149,7 @@ nav .navlinks-right ul>li> .btn{
 /***** HERO PAGE  *****/
 
 main .hero-page{
- width: 90rem;
+ width: 100%;
  height: 28rem;
  overflow: hidden;
  background: url('../public/images/hero-image-book.png');
@@ -171,8 +176,6 @@ main .hero-page .hero-content{
   padding-top: 2.20rem;
   font-family: var(--inter-700);
   font-size: 2rem;
-  top: 26%;
-  left: 27%;
 }
 
 .hero-icons span{
@@ -272,6 +275,7 @@ main .contents .page-article p{
 }
 
 .contents .tag-story ul{
+  flex-wrap: wrap;
   display: flex;
   gap: 1rem;
 }
@@ -322,6 +326,11 @@ main .novels .novels-content .novels-heading{
   color: var(--text-black);
 }
 
+.novels-contain{
+  overflow-x: scroll;
+  gap: 1rem;
+}
+
 main .novels .novels-content .novels-tab{
   padding-top: 2rem;
 }
@@ -359,9 +368,10 @@ main .novels .novels-content .novels-tab{
   font-size: 1.125rem;
   padding-top: 2.75rem;
   font-family: var(--inter-400);
-  gap: 1rem;
+  gap: 1.4rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid var(--light-primary);
+
 }
 
 .container .review>span>a{
@@ -443,3 +453,21 @@ footer.footer{
 }
 
 /*XX** FOOTER **XX*/
+
+
+/* VIEWPORT LESS THAN OR EQUALS TO 780PX */
+
+@media only screen and (max-width:780px){
+  .display-none-780px{ display: none;}
+
+  nav .navlinks-right ul>.user-icon{
+    display: flex;
+  }
+  .navlinks-left .coll{
+    display: flex;
+    font-family: var(--inter-700);
+    font-size: 1rem;
+    color: #5555;
+    right: 13px;
+  }
+}
