@@ -634,6 +634,14 @@ footer.footer{
     left: 3.625rem;
   }
 
+  .contents .heading h3>a{
+    font-size: 1.8rem
+  }
+
+  .contents .heading h3>span{
+    font-size: 1.8rem;
+  }
+
 
 }
 
@@ -708,7 +716,7 @@ footer.footer{
     padding-top: 0rem;
     padding-bottom: 0rem;
     position: absolute;
-    top: 8.5;
+    top: 8.5rem;
     left: 2.375rem;
   }
 
@@ -726,13 +734,12 @@ footer.footer{
     line-height: 1rem;
   }
 
-  .container .heading h3>a{
-    font-size: 1.4rem;
+  .contents .heading h3>a {
+    font-size: 1.8rem
   }
-    
-  .container .heading h3>span{
-    padding-left: 0.4rem;
-    font-size: 1.4rem;
+
+  .contents .heading h3>span {
+    font-size: 1.8rem;
   }
 
 
