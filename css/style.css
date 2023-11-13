@@ -401,7 +401,7 @@ main .novels .novels-content .novels-tab{
 .container .heading span {
   color: var(--light-primary);
   border: none;
-  padding-left: 3.2rem;
+  padding-left: 0.8rem;
 }
 
 .comment-space{
@@ -473,6 +473,11 @@ footer.footer{
     height: 448px;
   }
 
+  .hero-page .hero-content .hero-text>h3 {
+    font-size: 2.125rem;
+    padding-top: 1.8rem;
+  }
+
   .hero-text .read-library{
     position: absolute;
     top: 17.6rem;
@@ -498,7 +503,9 @@ footer.footer{
 
   .hero-page .hero-content .hero-text {
     font-size: 1.765rem;
+    padding-top: 0rem;
   }
+  
   .hero-icons span {
     padding-right: 0.5rem;
   }
@@ -528,11 +535,104 @@ footer.footer{
 
 
 
+/* VIEWPORT LESS THAN OR EQUALS TO 640PX */
+@media only screen and (max-width:640px) {
+  .hero-page .hero-content .fg-img>img {
+    width: 12.875rem;
+    height: 14.162rem;
+  }
+
+  .hero-page .hero-content .fg-img>a {
+    transform: scale(0.9);
+    left: 5.688rem;
+    bottom: 11.0625rem;
+  }
+
+  .hero-page .hero-content .hero-text {
+    padding-top: 0rem;
+  }
+
+  .hero-page .hero-content .hero-text>h3 {
+    font-size: 1.9rem;
+    padding-top: 1.4rem;
+  }
+
+  .hero-text .hero-icons>span>span {
+    font-size: 0.8rem;
+  }
+
+  .hero-text .hero-icons>span>img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+
+  .hero-text .read-library {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    position: absolute;
+    top: 17.56rem;
+    left: 6rem;
+  }
+
+  .hero-text .read-library ul li a {
+    font-size: 0.8rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .container .heading h3>a {
+    font-size: 2rem;
+  }
+
+  .container .heading h3>span {
+    padding-left: 0.4rem;
+    font-size: 2rem;
+  }
+}
 
 
 
 
-/* VIEWPORT LESS THAN OR EQUALS TO 6460PX */
+
+
+/* VIEWPORT LESS THAN OR EQUALS TO 560PX */
+@media only screen and (max-width:560px){
+  .hero-page .hero-content .fg-img>img {
+    width: 10.875rem;
+    height: 12.162rem;
+  }
+
+  .hero-page .hero-content .hero-text>h3 {
+    font-size: 1.5rem;
+    padding-top: 1.2rem;
+  }
+
+  .hero-content .hero-text .hero-icons>span {
+    font-size: 0.625rem;
+    padding: 0px;
+  }
+
+  .hero-text .rating .rate-figure {
+    font-size: 1.2rem;
+  }
+
+  .hero-text .rating>div>img {
+    height: 1rem;
+    width: 100%;
+  }
+
+  .rating .rate-figure>span {
+    font-size: 0.8625rem;
+  }
+}
+
+
+
+
+
+
+
+/* VIEWPORT LESS THAN OR EQUALS TO 460PX */
 
 @media only screen and (max-width: 460px){
   main .hero-page{
@@ -546,12 +646,8 @@ footer.footer{
 
   .hero-page .hero-content .fg-img>a {
     transform: scale(0.6);
-    left: 1.188rem;
-    bottom: 5.938rem;
-  }
-
-  .hero-page .hero-content .hero-text{
-    padding-top: 0rem;
+    left: 3.813rem;
+    bottom: 9.25rem;
   }
 
   .hero-page .hero-content .hero-text>h3{
@@ -600,17 +696,13 @@ footer.footer{
     padding-top: 0rem;
     padding-bottom: 0rem;
     position: absolute;
-    top: 8.0625rem;
-    left: 2.5rem;
+    top: 13.625rem;
+    left: 3rem;
   }
 
   .hero-text .read-library ul li a{
     font-size: 0.6rem;
     padding: 0.5rem 1rem;
-  }
-
-  .contents .heading h3{
-    font-size: 1.2rem;
   }
 
   main .contents .page-article  p{
@@ -624,7 +716,6 @@ footer.footer{
 
   .container .heading h3>a{
     font-size: 1.4rem;
-    padding-left: 0px;
   }
     
   .container .heading h3>span{
