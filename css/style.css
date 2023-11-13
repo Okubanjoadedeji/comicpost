@@ -737,11 +737,11 @@ footer.footer{
 
 
   .contents .heading h3>a {
-    font-size: 1rem
+    font-size: 1.25rem
   }
 
   .contents .heading h3>span {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
 
@@ -751,11 +751,11 @@ footer.footer{
   }
 
   .comment-section .heading h3>a{
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 
   .comment-section .heading h3>span{
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 
 }  
