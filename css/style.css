@@ -748,4 +748,12 @@ footer.footer{
     padding-right: 0.2rem;
   }
 
+  .comment-section .heading h3>a{
+    font-size: 1.4rem;
+  }
+
+  .comment-section .heading h3>span{
+    font-size: 1.4rem;
+  }
+
 }  
