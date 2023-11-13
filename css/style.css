@@ -734,12 +734,14 @@ footer.footer{
     line-height: 1rem;
   }
 
+
+
   .contents .heading h3>a {
-    font-size: 1.4rem
+    font-size: 1.25rem
   }
 
   .contents .heading h3>span {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
   }
 
 
